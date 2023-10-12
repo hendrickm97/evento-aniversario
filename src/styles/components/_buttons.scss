@@ -1,0 +1,29 @@
+.button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+
+  &--primary {
+    color: #fff;
+    background-color: rgb(139, 6, 163);
+
+    &:hover {
+      background-color: #fff;
+      color: rgb(139, 6, 163);
+      border: solid 1px rgb(139, 6, 163);
+      transition: 0.5 ease;
+    }
+  }
+
+  @media (max-width: 640px) {
+    display: block;
+    width: 100%;
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+    align-items: center;
+  }
+}
